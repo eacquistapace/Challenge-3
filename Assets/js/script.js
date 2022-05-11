@@ -76,15 +76,41 @@ function generatePassword() {
   confirmPasswordLength = prompt(
     "How many characters would you like in your password? (Must be between 8 and 128 characters)."
   );
-  //Password not within paramater length, will return and alert user to choose correct length.
+  //Password not within paramater length, will alert user to choose correct length.
   if (confirmPasswordLength < 8 || confirmPasswordLength > 128) {
     alert("Please choose a length between 8 and 128 characters.");
-  } else if (confirmPasswordLength >= 8 || confirmPasswordLength <= 128) {
+  }
+  //Confirming correct length paramaters were met and repeating length back to user.
+  else if (confirmPasswordLength >= 8 || confirmPasswordLength <= 128) {
     alert(
       "Your password will be " + confirmPasswordLength + " characters long."
     );
-  } else {
+  }
+  //If any other paramaters are input (ex: A-Z or special characters), user will be alerted to input correct paramaters.
+  else {
     alert("Please choose a length between 8 and 128 characters.");
+  }
+  //Determine if user will want other paramaters in password (will need to choose at least 1 or else alert will appear).
+  var confirmUppercase = confirm(
+    "Click 'OK' if you would like to include uppercase characters in your password."
+  );
+  var confirmLowercase = confirm(
+    "Click 'OK' if you would like to include lowercase characters in your password."
+  );
+  var confirmNumeric = confirm(
+    "Click 'OK' if you would like to include numeric characters in your password."
+  );
+  var confirmSpecialCharacters = confirm(
+    "Click 'OK' if you would like to include special characters in your password."
+  );
+  if (
+    confirmUppercase === false &&
+    confirmLowercase === false &&
+    confirmNumeric === false &&
+    confirmSpecialCharacters === false
+  );
+  {
+    alert("You must choose at least one paramater to continue.");
   }
 }
 
