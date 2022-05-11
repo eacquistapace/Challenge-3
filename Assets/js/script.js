@@ -78,9 +78,14 @@ function generatePassword() {
   );
   //Password not within paramater length, will return and alert user to choose correct length.
   if (confirmPasswordLength < 8 || confirmPasswordLength > 128) {
-    return;
+    alert("Please choose a length between 8 and 128 characters.");
+  } else if (confirmPasswordLength >= 8 || confirmPasswordLength <= 128) {
+    alert(
+      "Your password will be " + confirmPasswordLength + " characters long."
+    );
+  } else {
+    alert("Please choose a length between 8 and 128 characters.");
   }
-  alert("Please choose a length between 8 and 128 characters.");
 }
 
 // Write password to the #password input
