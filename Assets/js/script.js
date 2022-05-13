@@ -181,6 +181,7 @@ function generatePassword() {
     passwordBlank.push(allChoices);
     console.log(allChoices);
   }
+  return passwordBlank;
 }
 
 // Write password to the #password input
