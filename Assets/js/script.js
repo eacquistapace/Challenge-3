@@ -171,7 +171,7 @@ function generatePassword() {
     console.log(userChoices);
   }
 
-  // Empty variable for the password lenght
+  // Empty variable for password length
   var passwordBlank = [];
 
   // Loop for random selection
