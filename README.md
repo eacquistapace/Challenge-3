@@ -1,4 +1,4 @@
-# Challenge-3
+# Password-Generator
 
 **Main Objective**
 
@@ -14,4 +14,4 @@ Yay, I was able to figure this out! I feel that the JS is a little lengthy and r
 
 **Deployed Application**
 
-https://eacquistapace.github.io/Challenge-3/
+https://eacquistapace.github.io/Password-Generator/
